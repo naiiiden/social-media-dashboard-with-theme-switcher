@@ -20,6 +20,19 @@ img {
 
 header {
   padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+header .theme_toggle_wrapper {
+  padding-top: 1.5rem;
+  border-top: 0.1rem solid #63687e;
 }
 
 header .heading_followers_container {
@@ -46,6 +59,19 @@ header .heading_followers_container p {
 @media screen and (min-width: 1024px) {
   header {
     padding: 3rem 5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .theme_toggle_wrapper {
+    border: none;
   }
   header .heading_followers_container h1 {
     font-size: 2rem;
