@@ -28,9 +28,9 @@ header {
 
 @media screen and (min-width: 1024px) {
     header {
-        padding: 3rem 5rem;
+        padding: 0 5rem 3rem 5rem;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
 
         .theme_toggle_wrapper {
@@ -49,6 +49,6 @@ header {
 
 @media screen and (min-width: 1280px) {
     header {
-        padding: 3rem 12rem;
+        padding: 0 12rem 3rem 12rem;
     }
 }

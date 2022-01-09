@@ -41,6 +41,9 @@ body {
     min-height: 100vh;
     position: relative;
     font-family: Inter, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 img {

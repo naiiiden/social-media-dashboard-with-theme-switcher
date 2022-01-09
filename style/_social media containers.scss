@@ -33,6 +33,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 1.5rem;
+        user-select: none;
 
         .icon_tag {
             display: flex;
@@ -79,7 +80,7 @@
 
 @media screen and (min-width: 1024px) {
     .social_media_containers {
-        padding: 3rem 12rem;
+        padding: 0 12rem 3rem 12rem;
         flex-direction: row;
         justify-content: center;
 
