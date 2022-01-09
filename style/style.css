@@ -10,10 +10,134 @@ body {
   width: 100%;
   min-height: 100vh;
   position: relative;
+  font-family: Inter, sans-serif;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.social_media_containers {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  /*DIFFERENT BORDER COLOR FOR EACH SOCIAL MEDIA CONTAINER*/
+  /*DIFFERENT BORDER COLOR FOR EACH SOCIAL MEDIA CONTAINER*/
+}
+
+.social_media_containers .facebook_border {
+  border-top: 0.25rem solid #198ff5;
+}
+
+.social_media_containers .twitter_border {
+  border-top: 0.25rem solid #1ca0f2;
+}
+
+.social_media_containers .instagram_border {
+  border-top: 0.25rem solid #fdc468;
+}
+
+.social_media_containers .youtube_border {
+  border-top: 0.25rem solid #c4032a;
+}
+
+.social_media_containers .big {
+  background: #f0f2fa;
+  padding: 1.25rem;
+  border-radius: .25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.social_media_containers .big .icon_tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+  color: #63687e;
+}
+
+.social_media_containers .big .icon_tag p {
+  font-weight: 700;
+  font-size: .85rem;
+}
+
+.social_media_containers .big .number_followers_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social_media_containers .big .bignumber {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.social_media_containers .big .followers {
+  letter-spacing: .25rem;
+  color: #63687e;
+}
+
+.social_media_containers .big .today {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+  font-weight: 700;
+  font-size: .85rem;
+  color: #1db489;
+}
+
+.social_media_containers .big .down {
+  color: #dc414c;
+}
+
+@media screen and (min-width: 1024px) {
+  .social_media_containers {
+    padding: 3rem 12rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .social_media_containers .big {
+    padding: 1.75rem;
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
