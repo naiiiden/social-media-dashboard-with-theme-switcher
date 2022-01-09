@@ -18,6 +18,132 @@ img {
   height: auto;
 }
 
+header {
+  padding: 1.5rem;
+}
+
+header .heading_followers_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+}
+
+header .heading_followers_container h1 {
+  font-size: 1.25rem;
+  color: #1e202a;
+}
+
+header .heading_followers_container p {
+  font-weight: 700;
+  color: #63687e;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 3rem 5rem;
+  }
+  header .heading_followers_container h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  header {
+    padding: 3rem 12rem;
+  }
+}
+
+.theme_toggle_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.theme_toggle_wrapper p {
+  color: #63687e;
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+.theme_toggle_wrapper .theme_switch {
+  position: relative;
+  height: 1.5rem;
+  width: 3.5rem;
+}
+
+.theme_toggle_wrapper .theme_switch input {
+  display: none;
+}
+
+.theme_toggle_wrapper .theme_switch .slider {
+  background: #aeb3cb;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.theme_toggle_wrapper .theme_switch .slider:before {
+  top: 0;
+  bottom: 0;
+  content: "";
+  height: 1.5rem;
+  right: 0;
+  position: absolute;
+  -webkit-transition: .3s;
+  transition: .3s;
+  width: 1.5rem;
+  background: #fff;
+}
+
+.theme_toggle_wrapper .theme_switch input:checked + .slider {
+  background: -webkit-gradient(linear, left top, left bottom, from(#378fe6), to(#3eda72));
+  background: linear-gradient(#378fe6, #3eda72);
+}
+
+.theme_toggle_wrapper .theme_switch input:checked + .slider:before {
+  right: 2rem;
+}
+
+.theme_toggle_wrapper .theme_switch .slider.round {
+  border-radius: 1rem;
+}
+
+.theme_toggle_wrapper .theme_switch .slider.round:before {
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 1024px) {
+  .theme_toggle_wrapper {
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    gap: 1rem;
+  }
+  .theme_toggle_wrapper p {
+    font-size: 1rem;
+  }
+}
+
 .social_media_containers {
   padding: 1.5rem;
   display: -webkit-box;

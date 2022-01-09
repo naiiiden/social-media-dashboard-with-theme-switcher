@@ -1,1 +1,72 @@
+.theme_toggle_wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
 
+    p {
+        color: $dark-grayish-blue;
+        font-weight: 700;
+        font-size: .9rem;
+    }
+
+    .theme_switch {
+        position: relative;
+        height: 1.5rem;
+        width: 3.5rem;
+
+        input {
+            display: none;
+        }
+
+        .slider {
+            background: $toggle-light;
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            transition: .3s;
+
+            &:before {
+                top: 0;
+                bottom: 0;
+                content: "";
+                height: 1.5rem;
+                right: 0;
+                position: absolute;
+                transition: .3s;
+                width: 1.5rem;
+                background: #fff;
+            }
+        }
+
+        input:checked + .slider {
+            background: linear-gradient(#378fe6, #3eda72);
+        }
+
+        input:checked + .slider:before {
+            right: 2rem;
+        }
+
+        .slider.round {
+            border-radius: 1rem;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .theme_toggle_wrapper {
+        justify-content: right;
+        gap: 1rem;
+        
+        p {
+            font-size: 1rem;
+        }
+    }
+}
