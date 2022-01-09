@@ -1,0 +1,79 @@
+.overview {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .overview_row {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .container {
+        background: $light-grayish-blue;
+        padding: 1.25rem;
+        border-radius: .25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        .statistic_logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p {
+                font-weight: 700;
+                color: $dark-grayish-blue;
+            }
+        }
+
+        .number_percentage {
+            display: flex;
+            justify-content: space-between;
+
+            .mediumnumber {
+                font-size: 1.75rem;
+                font-weight: 700;
+            }
+
+            .percentage {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                font-weight: 700;
+                font-size: .85rem;
+                color: $lime-green;
+                align-self: flex-end;
+            }
+
+            .down {
+                color: $bright-red;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .overview {
+        padding: 3rem 5rem;
+        flex-direction: column;
+        justify-content: center;
+
+        .overview_row {
+            flex-direction: row;
+
+            .container {
+                width: 30%;
+                padding: 1.75rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .overview {
+        padding: 3rem 12rem;
+    }
+}
