@@ -45,15 +45,16 @@
         input:checked + .slider {
             background: linear-gradient(#378fe6, #3eda72);
         }
-
+        
         input:checked + .slider:before {
             right: 2rem;
+            background: #737373;
         }
-
+        
         .slider.round {
             border-radius: 1rem;
         }
-
+        
         .slider.round:before {
             border-radius: 50%;
         }

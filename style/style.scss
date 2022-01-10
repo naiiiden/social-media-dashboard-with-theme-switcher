@@ -55,3 +55,101 @@ img {
 @import "./checkbox";
 @import "./social\ media\ containers";
 @import "./overview";
+
+@media (prefers-color-scheme: light) {
+    body {
+      background-color: $white;
+
+      .heading_followers_container {
+          p {
+              color: $dark-grayish-blue;
+          }
+      }
+
+      .overview {
+          .container {
+              background: $light-grayish-blue;
+
+              &:hover {
+                background: hsl(0, 44%, 95%);
+            }
+          }
+      }
+
+      .social_media_containers {
+          .big {
+              background: $light-grayish-blue;
+
+              &:hover {
+                background: hsl(0, 44%, 95%);
+            }
+          }
+      }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $very-dark-blue;
+
+        .heading_followers_container {
+            h1 {
+                color: $white;
+            }
+            
+            p {
+                color: $desaturated-blue;
+            }
+        }
+
+        .overview {
+            h2 {
+                color: $white;
+            }
+
+            .container {
+                background: $dark-desaturated-blue;
+
+                &:hover {
+                    background: hsl(228, 27%, 29%);
+                }
+
+                .statistic_logo {
+                    p {
+                        color: $desaturated-blue;
+                    }
+                }
+
+                .number_percentage {
+                    .mediumnumber {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .social_media_containers {
+            .big {
+                background: $dark-desaturated-blue;
+
+                &:hover {
+                    background: hsl(228, 27%, 29%);
+                }
+
+                .icon_tag {
+                    p {
+                        color: $desaturated-blue;
+                    }
+                }
+
+                .bignumber {
+                    color: $white;
+                }
+
+                .followers {
+                    color: $desaturated-blue;
+                }
+            }
+        }
+    }
+}

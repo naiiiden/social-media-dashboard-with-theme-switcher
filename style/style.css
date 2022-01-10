@@ -158,6 +158,7 @@ header .heading_followers_container p {
 
 .theme_toggle_wrapper .theme_switch input:checked + .slider:before {
   right: 2rem;
+  background: #737373;
 }
 
 .theme_toggle_wrapper .theme_switch .slider.round {
@@ -266,6 +267,7 @@ header .heading_followers_container p {
 .social_media_containers .big .bignumber {
   font-size: 3.5rem;
   font-weight: 700;
+  color: #1e202a;
 }
 
 .social_media_containers .big .followers {
@@ -381,6 +383,7 @@ header .heading_followers_container p {
 .overview .container .number_percentage .mediumnumber {
   font-size: 1.75rem;
   font-weight: 700;
+  color: #1e202a;
 }
 
 .overview .container .number_percentage .percentage {
@@ -428,6 +431,69 @@ header .heading_followers_container p {
 @media screen and (min-width: 1280px) {
   .overview {
     padding: 0 12rem 0 12rem;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+  }
+  body .heading_followers_container p {
+    color: #63687e;
+  }
+  body .overview .container {
+    background: #f0f2fa;
+  }
+  body .overview .container:hover {
+    background: #f8eded;
+  }
+  body .social_media_containers .big {
+    background: #f0f2fa;
+  }
+  body .social_media_containers .big:hover {
+    background: #f8eded;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e202a;
+  }
+  body .heading_followers_container h1 {
+    color: white;
+  }
+  body .heading_followers_container p {
+    color: #8b97c6;
+  }
+  body .overview h2 {
+    color: white;
+  }
+  body .overview .container {
+    background: #252a41;
+  }
+  body .overview .container:hover {
+    background: #363e5e;
+  }
+  body .overview .container .statistic_logo p {
+    color: #8b97c6;
+  }
+  body .overview .container .number_percentage .mediumnumber {
+    color: white;
+  }
+  body .social_media_containers .big {
+    background: #252a41;
+  }
+  body .social_media_containers .big:hover {
+    background: #363e5e;
+  }
+  body .social_media_containers .big .icon_tag p {
+    color: #8b97c6;
+  }
+  body .social_media_containers .big .bignumber {
+    color: white;
+  }
+  body .social_media_containers .big .followers {
+    color: #8b97c6;
   }
 }
 /*# sourceMappingURL=style.css.map */
