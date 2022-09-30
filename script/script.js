@@ -24,7 +24,7 @@ const darktext = document.querySelectorAll(".darktext");
 document.getElementById("checkbox").addEventListener("click", () => {
   darktext.forEach((elem) => { 
     if (elem.style.color == "rgb(99, 104, 126)") {
-        elem.style.color = "rgb(139, 151, 198)";
+        elem.style.color = "#A4ACB7";
     } else {
         elem.style.color = "rgb(99, 104, 126)";
     };
