@@ -198,7 +198,7 @@ header .heading_followers_container p {
   color: hsl(163deg, 72%, 41%);
 }
 .social_media_containers .big .down {
-  color: hsl(356deg, 69%, 56%);
+  color: #E46C74;
 }
 
 @media screen and (min-width: 1024px) {
@@ -266,7 +266,7 @@ header .heading_followers_container p {
   align-self: flex-end;
 }
 .overview .container .number_percentage .down {
-  color: hsl(356deg, 69%, 56%);
+  color: #E46C74;
 }
 
 @media screen and (min-width: 1024px) {
