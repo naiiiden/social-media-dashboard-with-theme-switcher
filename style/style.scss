@@ -27,6 +27,10 @@ $light-grayish-blue: /*(Card BG)*/ rgb(240, 242, 250);
 $dark-grayish-blue: /*(Text)*/ rgb(99, 104, 126);
 $very-dark-blue: /*(Text)*/ rgb(30, 32, 42);
 
+.sr-only {
+    opacity: 0;
+    visibility: hidden;
+}
 
 * {
     margin: 0;
